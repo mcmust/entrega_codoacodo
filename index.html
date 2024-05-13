@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estudio de Abogados - Tu Defensa Legal en Argentina</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Estudio de Abogados</h1>
+      <!-- Menú para pantalla de escritorio y tablet -->
+      <div class="desktop-menu">
+        <a href="#">Home</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#equipo">Nuestro Equipo</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <!-- Menú para dispositivos móviles -->
+      <div class="open-menu-btn">☰</div>
+      <nav class="mobile-menu">
+        <div class="mobile-menu-links">
+          <a href="#">Home</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#equipo">Nuestro Equipo</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="servicios">
+        <section>
+          <h2>Nuestro Compromiso</h2>
+          <p>
+            Nuestro estudio de abogados en Argentina se especializa en ofrecer
+            soluciones legales personalizadas y eficientes para resolver una
+            amplia gama de problemas legales. Con un equipo de abogados expertos
+            en diversas áreas del derecho, estamos comprometidos en brindar
+            asesoramiento y representación legal de la más alta calidad.
+          </p>
+        </section>
+        <section>
+          <h2>Nuestra Especialización</h2>
+          <p>
+            En nuestro estudio, comprendemos la importancia de cada caso y la
+            necesidad de una atención individualizada. Ya sea que necesites
+            asesoramiento en derecho civil y comercial, representación en
+            conflictos laborales o defensa en casos penales, nuestro equipo está
+            preparado para ayudarte a enfrentar cualquier situación legal con
+            confianza y tranquilidad.
+          </p>
+        </section>
+        <section>
+          <h2>Nuestra Experiencia</h2>
+          <p>
+            Con más de una década de experiencia, hemos ayudado a numerosos
+            clientes a resolver sus problemas legales de manera efectiva y
+            satisfactoria. Nuestra reputación se basa en la dedicación hacia
+            nuestros clientes, la excelencia en nuestro trabajo y la ética
+            profesional que nos caracteriza. Confía en nuestro equipo para
+            defender tus derechos y obtener los resultados que mereces.
+          </p>
+        </section>
+      </section>
+      <section id="equipo">
+        <h2>Nuestro Equipo</h2>
+        <p>
+          Conoce a nuestro equipo de abogados expertos en diversas áreas del
+          derecho.
+        </p>
+        <ul>
+          <li>
+            <strong>Lic. María González:</strong> Experta en Derecho Civil y
+            Comercial.
+          </li>
+          <li>
+            <strong>Dr. Juan Pérez:</strong> Especialista en Derecho Penal.
+          </li>
+        </ul>
+      </section>
+      <section id="experiencia">
+        <h2>Nuestra Experiencia</h2>
+        <p>
+          Con más de 10 años de experiencia, hemos ayudado a numerosos clientes
+          a resolver sus problemas legales de manera efectiva.
+        </p>
+      </section>
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <form
+          id="contactForm"
+          action="#"
+          method="POST"
+          onsubmit="alert('Formulario enviado')"
+        >
+          <fieldset>
+            <legend>Información Personal</legend>
+            <div>
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required />
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div>
+              <label for="telefono">Teléfono:</label>
+              <input type="tel" id="telefono" name="telefono" />
+            </div>
+            <div>
+              <label for="mensaje">Mensaje:</label>
+              <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+            <div>
+              <label for="motivo">Motivo de Contacto:</label>
+              <select id="motivo" name="motivo" required>
+                <option value="consulta">Consulta</option>
+                <option value="presupuesto">Presupuesto</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Fuero</legend>
+            <div>
+              <label
+                ><input
+                  type="radio"
+                  name="fuero"
+                  value="civil"
+                  required
+                />Civil</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  name="fuero"
+                  value="labooral"
+                />Laboral</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  name="fuero"
+                  value="comercial"
+                />Comercial</label
+              >
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div>
+              <label
+                ><input
+                  type="checkbox"
+                  id="acepto"
+                  name="acepto"
+                  required
+                />Acepto los términos y condiciones</label
+              >
+            </div>
+          </fieldset>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Estudio de Abogados. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
