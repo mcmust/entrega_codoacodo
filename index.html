@@ -11,24 +11,55 @@
       <h1>Estudio de Abogados</h1>
       <!-- Menú para pantalla de escritorio y tablet -->
       <div class="desktop-menu">
-        <a href="#">Home</a>
-        <a href="#servicios">Servicios</a>
+        <a href="#quienes-somos">El Estudio</a>
         <a href="#equipo">Nuestro Equipo</a>
+        <a href="#servicios">Nuestros valores</a>
         <a href="#contacto">Contacto</a>
       </div>
       <!-- Menú para dispositivos móviles -->
       <div class="open-menu-btn">☰</div>
       <nav class="mobile-menu">
         <div class="mobile-menu-links">
-          <a href="#">Home</a>
-          <a href="#servicios">Servicios</a>
+          <a href="#quienes-somos">El Estudio</a>
           <a href="#equipo">Nuestro Equipo</a>
+          <a href="#servicios">Nuestros valores</a>
           <a href="#contacto">Contacto</a>
         </div>
       </nav>
     </header>
     <main>
-      <section id="servicios">
+      <section id="quienes-somos">
+        <h2>El estudio.</h2>
+        <p>
+          El Estudio de Abogados tiene sus raíces en la pasión por la justicia y
+          el compromiso con la defensa de los derechos legales de nuestros
+          clientes. Fundado hace más de una década, nuestro estudio se ha
+          destacado por ofrecer soluciones legales personalizadas y eficientes
+          para una amplia gama de problemas legales en Argentina. Nuestra
+          reputación se basa en la dedicación hacia nuestros clientes, la
+          excelencia en nuestro trabajo y la ética profesional que nos
+          caracteriza. Confía en nuestro equipo para defender tus derechos y
+          obtener los resultados que mereces.
+        </p>
+      </section>
+      <section id="equipo">
+        <h2>Nuestro Equipo</h2>
+        <p>
+          Conoce a nuestro equipo de abogados expertos en diversas áreas del
+          derecho.
+        </p>
+        <ul>
+          <li>
+            <strong>Lic. María González:</strong> Experta en Derecho Civil y
+            Comercial.
+          </li>
+          <li>
+            <strong>Dr. Juan Pérez:</strong> Especialista en Derecho Penal.
+          </li>
+        </ul>
+      </section>
+
+      <section id="servicios" class="servicios-grid">
         <section>
           <h2>Nuestro Compromiso</h2>
           <p>
@@ -62,46 +93,24 @@
           </p>
         </section>
       </section>
-      <section id="equipo">
-        <h2>Nuestro Equipo</h2>
-        <p>
-          Conoce a nuestro equipo de abogados expertos en diversas áreas del
-          derecho.
-        </p>
-        <ul>
-          <li>
-            <strong>Lic. María González:</strong> Experta en Derecho Civil y
-            Comercial.
-          </li>
-          <li>
-            <strong>Dr. Juan Pérez:</strong> Especialista en Derecho Penal.
-          </li>
-        </ul>
-      </section>
-      <section id="experiencia">
-        <h2>Nuestra Experiencia</h2>
-        <p>
-          Con más de 10 años de experiencia, hemos ayudado a numerosos clientes
-          a resolver sus problemas legales de manera efectiva.
-        </p>
-      </section>
+
       <section id="contacto">
         <h2>Contacto</h2>
         <form
           id="contactForm"
           action="#"
           method="POST"
-          onsubmit="alert('Formulario enviado')"
+          onsubmit="validateForm(event);return false"
         >
           <fieldset>
             <legend>Información Personal</legend>
             <div>
               <label for="nombre">Nombre:</label>
-              <input type="text" id="nombre" name="nombre" required />
+              <input type="text" id="nombre" name="nombre" />
             </div>
             <div>
               <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required />
+              <input type="email" id="email" name="email" />
             </div>
             <div>
               <label for="telefono">Teléfono:</label>
@@ -109,15 +118,19 @@
             </div>
             <div>
               <label for="mensaje">Mensaje:</label>
-              <textarea id="mensaje" name="mensaje" required></textarea>
+              <textarea id="mensaje" name="mensaje"></textarea>
             </div>
             <div>
               <label for="motivo">Motivo de Contacto:</label>
-              <select id="motivo" name="motivo" required>
+              <select id="motivo" name="motivo">
                 <option value="consulta">Consulta</option>
                 <option value="presupuesto">Presupuesto</option>
                 <option value="otro">Otro</option>
               </select>
+            </div>
+            <div>
+              <label for="imagen">Imagen:</label>
+              <input type="file" id="imagen" name="imagen" accept="image/*" />
             </div>
           </fieldset>
 
@@ -125,12 +138,7 @@
             <legend>Fuero</legend>
             <div>
               <label
-                ><input
-                  type="radio"
-                  name="fuero"
-                  value="civil"
-                  required
-                />Civil</label
+                ><input type="radio" name="fuero" value="civil" />Civil</label
               >
               <label
                 ><input
@@ -152,12 +160,8 @@
           <fieldset>
             <div>
               <label
-                ><input
-                  type="checkbox"
-                  id="acepto"
-                  name="acepto"
-                  required
-                />Acepto los términos y condiciones</label
+                ><input type="checkbox" id="acepto" name="acepto" />Acepto los
+                términos y condiciones</label
               >
             </div>
           </fieldset>
