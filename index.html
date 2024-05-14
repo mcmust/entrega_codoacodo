@@ -4,6 +4,8 @@
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Estudio de Abogados - Tu Defensa Legal en Argentina</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="stylesheet" href="styles.css" >
   </head>
   <body>
@@ -29,7 +31,7 @@
     </header>
     <main>
       <section id="quienes-somos">
-        <h2>El estudio.</h2>
+        <h2>El estudio.<i class="fa-solid fa-gavel" style="margin-left: 10px;"></i></h2>
         <p>
           El Estudio de Abogados tiene sus raíces en la pasión por la justicia y
           el compromiso con la defensa de los derechos legales de nuestros
@@ -42,8 +44,9 @@
           obtener los resultados que mereces.
         </p>
       </section>
+
       <section id="equipo">
-        <h2>Nuestro Equipo</h2>
+        <h2>Nuestro Equipo<i class="fa-solid fa-user-tie" style="margin-left: 10px;"></i></h2>
         <p>
           Conoce a nuestro equipo de abogados expertos en diversas áreas del
           derecho.
@@ -59,7 +62,13 @@
         </ul>
       </section>
 
-      <section id="servicios" class="servicios-grid">
+      <!-- <section id="servicios" class="servicios-grid"> -->
+      <section id="servicios" class="">
+      <div style="display: flex; flex-direction: column;">
+      <h2>Nuestros valores<i class="fa-solid fa-list-check" style="margin-left: 10px;"></i></h2>
+
+      <div class="servicios-grid">
+      <div>
           <h2>Nuestro Compromiso</h2>
           <p>
             Nuestro estudio de abogados en Argentina se especializa en ofrecer
@@ -68,6 +77,8 @@
             en diversas áreas del derecho, estamos comprometidos en brindar
             asesoramiento y representación legal de la más alta calidad.
           </p>
+      </div>
+      <div>
           <h2>Nuestra Especialización</h2>
           <p>
             En nuestro estudio, comprendemos la importancia de cada caso y la
@@ -77,6 +88,8 @@
             preparado para ayudarte a enfrentar cualquier situación legal con
             confianza y tranquilidad.
           </p>
+      </div>
+      <div>
           <h2>Nuestra Experiencia</h2>
           <p>
             Con más de una década de experiencia, hemos ayudado a numerosos
@@ -86,10 +99,14 @@
             profesional que nos caracteriza. Confía en nuestro equipo para
             defender tus derechos y obtener los resultados que mereces.
           </p>
+      </div>
+      </div>
+      </div>
+
       </section>
 
       <section id="contacto">
-        <h2>Contacto</h2>
+        <h2>Contacto<i class="fa-regular fa-address-card" style="margin-left: 10px;"></i></h2>
         <form
           id="contactForm"
           action="#"
